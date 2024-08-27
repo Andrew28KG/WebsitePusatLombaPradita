@@ -1,0 +1,345 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #F7F7F7;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  background-color: #fff; 
+  padding: 15px 30px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
+}
+
+.navbar img {
+  width: 120px;
+  height: auto;
+}
+
+.navbar-right {
+  display: flex;
+  list-style-type: none;
+  color: #FF9500;
+}
+
+.navbar-right a {
+  border-radius: 5px;
+  display: block;
+  color: #FF9500;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar-right a:hover {
+  background-color: #ddd;
+  color: #1F4F13;
+}
+
+.dropbtn {
+  text-decoration: none;
+  color: #000;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.6s, color 0.6s, border-color 0.6s;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid #ddd;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+  color: #1F4F13;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  border-color: #000;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #5D737E; 
+  color: #fff; 
+  padding: 15px; 
+  text-align: center;
+}
+
+
+/* HOMEPAGE MAHASISWA */
+
+/*   Bagian Slider  */
+.slider-frame {
+  overflow: hidden;
+  width: 100%;
+  max-width: 890px;
+  height: 470px;
+  margin: 20px auto;
+  border-radius: 5px;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.slide-images{
+  display: flex;
+  width: 2670px;
+  height: 800px;
+  margin: 0 0 0 -1780px;
+  position: relative;
+  animation: slide_animation 20s infinite alternate;
+}
+
+@keyframes slide_animation{
+  0% {left:0px;}
+  10% {left:0px;}
+  20% {left:890px;}
+  30% {left:890px;}
+  40% {left: 1780px;}
+  50% {left: 1780px;}
+  60% {left: 890px;}
+  70% {left: 890px;}
+  80% {left: 0px;}
+  90% {left: 0px;}
+  100% {left:0px;}
+}
+
+
+.img-container {
+  width: 33.3333%;
+  flex-shrink: 0; 
+  overflow: hidden; 
+}
+
+.img-container img {
+  width: 100%; 
+  height: auto; 
+}
+
+
+/*  Bagian Button  */
+.kegiatan {
+  margin-top: 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+  background-color: #ffffff;
+  height: 90px;
+  border-radius: 9px;
+  position: relative;
+  margin-left: 11%;
+  margin-right: 11%;
+  border: 1px solid #a3a3a3;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: transform 0.5s ease;
+}
+
+.kegiatan:hover {
+  transform: scale(1.05);
+}
+
+.kegiatan img {
+  width: 170px;
+  height: auto;
+  left: -20px;
+  position: absolute;
+}
+
+.button-container {
+  position: relative;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  color: #000;
+}
+
+
+/* daftar lomba */
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 827px;
+}
+
+.wrapperl {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin-top: 120px;
+  margin-bottom: 50px;
+}
+
+.post {
+  position: relative;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.lomba {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 10px 0;
+  width: 800px; 
+  border: 1px solid #a3a3a3;
+  background-color: #ffffff;
+  border-radius: 9px;
+  transition: transform 0.3s ease-in-out;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+.lomba:hover {
+  transform: scale(1.02);
+}
+
+.lomba-info {
+  width: 70%;
+}
+
+.filter-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.jumlah-lomba {
+  font-size: 20px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Detail lomba */
+.back-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #1F4F13;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.poster {
+  width: 1000px;
+  height: 600px;
+  margin-top: 50px;
+}
+
+.info-box {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.button.daftar-button {
+  padding: 10px 20px;
+  background-color: #1F4F13;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button.daftar-button:hover {
+  background-color: #145009;
+}
+
+/* usul lomba */
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="time"],
+input[type="date"],
+input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #1F4F13;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #145009;
+}
